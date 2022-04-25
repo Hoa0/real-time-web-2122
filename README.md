@@ -1,4 +1,4 @@
-# rtw-team
+# RTW
 
 ## 📝 Concept
 
@@ -8,7 +8,7 @@
 ## 👩‍🏫 Installation
 
 ```
-$ clone git clone https://github.com/AllyssaA/rtw-team.git
+$ clone git clone 
 ```
 
 Install dependencies
@@ -43,12 +43,6 @@ $ npm run dev
 
 ## ⚖ License
 
-[MIT](https://github.com/AllyssaA/rtw-team/blob/main/LICENSE)
+[MIT]()
 
-
-## ✍ Authors
-
-- [@kiara1404](https://github.com/kiara1404)
-- [@Hoa0](https://github.com/Hoa0)
-- [@AllyssaA](https://github.com/AllyssaA)
 
