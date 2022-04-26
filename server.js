@@ -4,7 +4,7 @@ https://socket.io/get-started/chat
 
 const express = require('express')
 const app = express()
-const fetch = require('node-fetch')
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const http = require('http').createServer(app)
 const path = require('path')
 const io = require('socket.io')(http)
@@ -32,19 +32,18 @@ app.get('/', (req, res) => {
         })
         .catch(err => res.send(err))
 })*/
-// index route
+
 app.get('/', (req, res) => {
-    fetch(endpoint)
-    .then(async response =>{
-        const collection = await response.json()
-        res.render('index', {
-        pageTitle: 'Chat',
-        data:collection.message
-        
-    })
-    console.log("check test",collection);
-    })
-    .catch(err => res.send(err))
+    res.render('index', {
+    pageTitle: 'Home'
+    });
+})
+
+// index route
+app.get('/chatroom', (req, res) => {
+        res.render('artGame', {
+        pageTitle: 'Chat'
+        });
 })
 
 io.on('connection', (socket) => {

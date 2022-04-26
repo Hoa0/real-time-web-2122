@@ -1,13 +1,6 @@
 <%- include('partials/head'); %> 
-    <section>
-        <h1>Chat</h1>
-        <ul></ul>
-        <form>
-            <input type="text" autocomplete="off">
-            <button><span>Send</span></button>
-        </form>
-    </section>
+<form method="GET" action="/chatroom" id="user-nickname">
+    <input name="user-nickname" id="nickname-input" type="text" autocomplete="off" /><button>Enter nickname</button>
+</form>
 
 <%- include('partials/footer'); %> 
-
-
