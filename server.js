@@ -46,6 +46,7 @@ app.get('/chatroom', (req, res) => {
         });
 })
 
+// listen on every connection
 io.on('connection', (socket) => {
     console.log('a user connected')
 
